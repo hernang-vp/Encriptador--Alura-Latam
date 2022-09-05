@@ -1,0 +1,216 @@
+:root {
+    --lightgrey: #f3f5fc;
+    --middlegrey: #D8DFE8;
+    --darkblue: #0A3871;
+    --grey: #495057;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--lightgrey);
+}
+
+main {
+    width: 100%;
+}
+
+.sectionLeft {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.main-title {
+    width: 100%;
+    height: 150px;
+    padding: 60px 0 0 8%;
+    margin: 0 auto;
+}
+
+.sectionLeft h1 {
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: var(--darkblue);
+}
+
+.encrypter {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#textToEncryp {
+    border: none;
+    background-color: transparent;
+    width: 85%;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    color: var(--darkblue);
+    resize: none;
+}
+
+.exclamation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.exclamation-sign {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background-image: url(./imagenes/exclamacion.png);
+    background-repeat: no-repeat;
+}
+
+.exclamation-legend {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: var(--grey);
+}
+
+.sectionLeft-buttons {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.button {
+    width: 280px;
+    height: 50px;
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn-encrypt {
+    background: var(--darkblue);
+    color: white;
+}
+
+.btn-decrypt {
+    background: var(--middlegrey);
+    color: var(--darkblue);
+    border: 1px solid var(--darkblue);
+}
+
+/* INICIO sectionRight */
+.sectionRight {
+    background-color: white;
+    width: 80%;
+    height: 215px;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 15px var(--middlegrey);
+}
+
+.sectionRight .text-Encryp {
+    width: 85%;
+    height: 140px;
+    margin-top: 15px;
+    background-color: transparent;
+    font-size: 2rem;
+    /* font-weight: bold; */
+    border: none;
+    resize: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.sectionRight .sectionRight-rule {
+    font-size: 1.4rem;
+    padding: 20px 40px 10px;
+}
+
+.btn-copy {
+    width: 120px;
+    height: 30px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: none;
+    background: var(--darkblue);
+    color: white;
+}
+
+/* INICIO FOOTER */
+footer p {
+    background-color: var(--middlegrey);
+    width: 135px;
+    height: 18px;
+    /* margin-top: 20px; */
+    text-align: center;
+    padding-top: 2px;
+
+    transform: rotate(-90deg);
+    position: fixed;
+    bottom: 58px;
+    left: -59px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 640px) {
+    .sectionRight {
+        width: 90%;
+        max-width: 580px;
+    }
+
+    .sectionRight .text-Encryp {
+        width: 90%;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+        display: flex;
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    .sectionLeft {
+        width: 60%;
+        padding: 0;
+    }
+
+    .button {
+        width: 200px;
+    }
+
+    .textToEncryp {
+        padding-left: 10px;
+        height: 270px;
+    }
+
+    .sectionRight {
+        margin: 60px 0 0 0;
+        width: 37%;
+        height: 470px;
+        right: 0;
+
+        background-image: url(./imagenes/Muñeco.png);
+        background-size: 85%;
+        /* background-position-x: center; */
+        background-position: 25px 100px;
+        background-repeat: no-repeat;
+    }
+
+    .sectionRight .text-Encryp {
+        width: 80%;
+        height: 360px;
+        margin-top: 30px;
+    }
+}

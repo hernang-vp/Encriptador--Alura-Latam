@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge ONE - Encriptador</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./imagenes/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section class="sectionLeft">
+            <div class="main-title">
+                <a href="https://www.aluracursos.com/"><img src="./imagenes/logo.png" alt="Logo Alura Latam"></a>
+                <h1>Encriptador - Alura Latam</h1>
+            </div>
+
+            <form class="encrypter">
+                <label for="textToEncryp"></label>
+                <textarea class="textToEncryp" name="textToEncryp" id="textToEncryp" cols="30" rows="7"
+                    placeholder="Ingrese el texto aquí" required autofocus></textarea>
+
+                <div class="exclamation">
+                    <span class="exclamation-sign"></span>
+                    <p class="exclamation-legend">Solo letras minúsculas y sin acentos</p>
+                </div>
+
+                <div class="sectionLeft-buttons">
+                    <button class="button btn-encrypt" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="button btn-decrypt" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Sección Derecha -->
+        <section class="sectionRight">
+            <label for="text-Encryp"></label>
+            <textarea class="text-Encryp" name="text-Encryp" id="text-Encryp" cols="30"
+                rows="5">Ningún mensaje fue encontrado</textarea>
+            <p class="sectionRight-rule">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button class="btn-copy" onclick="copiar()">Copiar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>diseñado por hernang.vp</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
